@@ -8,3 +8,4 @@ Ry's Internet House
 * weather lookup + alerts if the temperature drops past a certain point
 * email myself random notes 
 * book log
+* useful code shorthand repository 
