@@ -9,3 +9,7 @@ Ry's Internet House
 * email myself random notes 
 * book log
 * useful code shorthand repository 
+
+
+
+### setInterval - will loop through something by time
