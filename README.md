@@ -1,15 +1,9 @@
 # rsdesoto.github.io
 
-Ry's Internet House
+Ry's Bio and Portfolio
 
-### Ideas 
-* pomodoro timer 
-* drum machine
-* weather lookup + alerts if the temperature drops past a certain point
-* email myself random notes 
-* book log
-* useful code shorthand repository 
+### Credit 
+Background taken from subtle patterns. Design is [] by [].
 
-
-
-### setInterval - will loop through something by time
+### Contact
+For questions or concerns, email me at ry.e.desoto@gmail.com
