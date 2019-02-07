@@ -1,0 +1,95 @@
+/* 
+white
+#FFFFFF
+
+black
+#000000
+
+Color 7
+#C1394A
+
+Color 8
+#53B0CF
+
+Color 9
+#F6C71A
+ */
+
+body {
+  height: 100vh;
+  width: 100wh;
+}
+
+.page {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  background-color: black;
+  color: #f6c71a;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.header-content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-link {
+  padding: 0 10px;
+}
+
+.header-name {
+  font-size: 36;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 36px;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+
+header h4 {
+  text-decoration: none;
+  padding-bottom: 0;
+}
+
+header a {
+  color: #f6c71a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header a :hover {
+  text-decoration: underline;
+  color: #ff9d00;
+  transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    display: block;
+    text-align: center;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .header-right {
+    margin-top: 15px;
+  }
+}

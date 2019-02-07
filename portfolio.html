@@ -5,324 +5,442 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- style sheets: reset, fonts, fontstyles, and styles -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
+      type="text/css"
+      media="screen"
+      href="./assets/css/reset.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="./CSS/style.css"
+      href="./assets/css/font.css"
     />
-    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
   </head>
+
   <body>
-    <div class="content">
-      <nav class="navbar navbar-expand-lg navbar-light navbar-expand fixed-top">
-        <div class="container">
-          <a class="navbar-brand headername" href="#">Ry DeSoto</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link nav-border" href="./index.html"
-                  >About <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link nav-border" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-            </ul>
+    <div class="page">
+      <header>
+        <div class="header-content">
+          <a href="./index.html"> <h2 class="header-name">Ry DeSoto</h2></a>
+          <div class="header-right">
+            <a href="./index.html"> <h4 class="header-link">About</h4></a>
+            <a href="./portfolio.html">
+              <h4 class="header-link">Portfolio</h4></a
+            >
           </div>
         </div>
-      </nav>
+      </header>
+      <main>
+        <div class="content-container">
+          <div class="portfolio-section">
+            <h1>Portfolio</h1>
+            <div class="portfolio-section-header">
+              <h3>
+                <a class="internal-link" id="portfolio-projects"></a>Projects
+              </h3>
+              <h4>
+                { Skip to:
+                <a href="#portfolio-websites">Website Recreations</a> /
+                <a href="#portfolio-work">Work Experience</a> /
+                <a href="#portfolio-current">Current Project</a> }
+              </h4>
+            </div>
 
-      <div class="spacer-top">
-        <!--
-                    this is a placeholder to make the grid work properly with a fixed header
-                -->
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm"><h1>Portfolio</h1></div>
-        </div>
-        <div class="row">
-          <div class="col-sm"><hr /></div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="row">
-              <div class="col-sm">
-                <a href="https://rsdesoto.github.io/word-guess-game/">
-                  <div class="card bg-dark text-white">
+            <div class="portfolio-row">
+              <div class="portfolio-item">
+                <h4>NextPedia</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://nextpedia.herokuapp.com/">
                     <img
-                      class="card-img"
-                      src="./images/k2.png"
-                      alt="Word Guess Game"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">Word Guess Game</h5>
-                    </div>
-                  </div></a
-                >
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/nextpedia.png"
+                      alt="NextPedia"
+                  /></a>
+                </div>
               </div>
-              <div class="col-sm">
-                <a href="https://rsdesoto.github.io/star-wars-game/index.html">
-                  <div class="card bg-dark text-white">
+              <div class="portfolio-item">
+                <h4>Cryptid Companion</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://best-cryptid-friend-finder.herokuapp.com/">
                     <img
-                      class="card-img"
-                      src="./images/rpg-game-pic.jpg"
-                      alt="Star Wars RPG"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">Star Wars cRPG</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <a href="https://rsdesoto.github.io/unit-4-game/index.html">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/crystal-game-pic.jpg"
-                      alt="Crystal Game"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">Crystal Game</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm">
-                <a href="https://rsdesoto.github.io/TriviaGame/index.html">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/trivia-game1.png"
-                      alt="Trivia Game"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">
-                        Computer Science Trivia Game
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <a href="https://rsdesoto.github.io/gif-finder/index.html">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/gifsearch.png"
-                      alt="Movie Gif Search"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">Movie Gif Search</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm">
-                <a href="https://rsdesoto.github.io/train-schedule/index.html">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/traintracker.jpg"
-                      alt="Train Tracker"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">Train Tracker</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <a href="https://github.com/rsdesoto/LIRIbot">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/LIRIbot.jpg"
-                      alt="LIRI Bot"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">LIRI Bot</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm">
-                <a href="https://github.com/rsdesoto/hangman-node">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/hangman.png"
-                      alt="Hangman - in Node"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">
-                        Console Cowboy Hangman
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <a href="https://github.com/rsdesoto/bamazon">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/bamazon.png"
-                      alt="Bamazon Content Management System"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">
-                        Bamazon Content Management System
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm">
-                <a href="https://best-cryptid-friend-finder.herokuapp.com/">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/cryptidcompanion.png"
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/cryptidcompanion.png"
                       alt="Cryptid Companion"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">
-                        Cryptid Companion Friend Matchmaker
-                      </h5>
-                    </div>
-                  </div>
-                </a>
+                  /></a>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm">
-                <a href="https://fast-headland-65580.herokuapp.com/">
-                  <div class="card bg-dark text-white">
+
+            <div class="portfolio-row">
+              <div class="portfolio-item">
+                <h4>Console Cowboy Hangman</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://github.com/rsdesoto/hangman-node">
                     <img
-                      class="card-img"
-                      src="./images/shopapp.png"
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/hangman.png"
+                      alt="Console Cowboy Hangman"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <h4>Shop Til You Drop grocery app</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://fast-headland-65580.herokuapp.com/">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/shopapp.png"
                       alt="Shop Til You Drop"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">
-                        Shop Til You Drop Full-Stack App
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm">
-                <a href="https://borgerborgerborgers.herokuapp.com/burgers">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/borger.png"
-                      alt="Burger Tracker"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">
-                        Burger Full-Stack App
-                      </h5>
-                    </div>
-                  </div>
-                </a>
+                  /></a>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm">
-                <a href="https://nyt-tech-scrapeathon.herokuapp.com/">
-                  <div class="card bg-dark text-white">
+
+            <div class="portfolio-row">
+              <div class="portfolio-item">
+                <h4>Knights of the Old Republic 3: Lightsaber Grindfest</h4>
+                <div class="portfolio-img-wrapper">
+                  <a
+                    href="https://rsdesoto.github.io/star-wars-game/index.html"
+                  >
                     <img
-                      class="card-img"
-                      src="./images/scraper.png"
-                      alt="NYT Tech Scraper"
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/rpg-game-pic.jpg"
+                      alt="Star Wars RPG"
+                  /></a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <h4>Computer Science Trivia Game</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://rsdesoto.github.io/TriviaGame/index.html">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/trivia-game1.png"
+                      alt="Hackerman Trivia Game"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-row">
+              <div class="portfolio-item">
+                <h4>React Memory Game</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://rsdesoto.github.io/clickygame/">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/clicky-game.png"
+                      alt="Memory Game"
+                  /></a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <h4>Bamazon Content Management</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://github.com/rsdesoto/bamazon">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/bamazon.png"
+                      alt="Bamazon"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-row">
+              <div class="portfolio-item">
+                <h4>Knitting Word Guess Game</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://rsdesoto.github.io/word-guess-game/">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/k2.png"
+                      alt="Knitting Game"
                     />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">
-                        NY Technology Section Article Scraper
-                      </h5>
-                    </div>
-                  </div>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <h4>Crystal Game</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://rsdesoto.github.io/unit-4-game/index.html">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/crystal-game-pic.jpg"
+                      alt="Crystal Game"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-row">
+              <div class="portfolio-item">
+                <h4>LIRI Bot</h4>
+
+                <div class="portfolio-img-wrapper">
+                  <a href="https://github.com/rsdesoto/LIRIbot">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/LIRIbot.jpg"
+                      alt="LIRI Bot"
+                  /></a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <h4>Borger Tracker</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://borgerborgerborgers.herokuapp.com/burgers">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/borger.png"
+                      alt="Borger Tracker"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-row">
+              <div class="portfolio-item">
+                <h4>Gif Search App</h4>
+                <div class="portfolio-img-wrapper">
+                  <a href="https://rsdesoto.github.io/gif-finder/index.html">
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/gifsearch.png"
+                      alt="Gif Finder"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <h4>Train Tracker</h4>
+                <div class="portfolio-img-wrapper">
+                  <a
+                    href="https://rsdesoto.github.io/train-schedule/index.html"
+                  >
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/portfolio-projects/traintracker.jpg"
+                      alt="Train Schedule"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3><a id="portfolio-websites"></a>Website Recreations</h3>
+              <h4>
+                { Skip to:
+                <a href="#portfolio-projects">Projects</a> /
+                <a href="#portfolio-work">Work Experience</a> /
+                <a href="#portfolio-current">Current Project</a>
+                }
+              </h4>
+            </div>
+
+            <p>
+              To practice HTML and CSS, I occasionally rebuild the front pages
+              of websites.
+            </p>
+
+            <div class="portfolio-row">
+              <div class="portfolio-item">
+                <h4>GitHub</h4>
+                <div class="portfolio-img-wrapper">
+                  <a
+                    href="https://rsdesoto.github.io/webpage_recreate/github/index.html"
+                  >
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/website-recreate/github-old.png"
+                      alt="test image"
+                  /></a>
+                </div>
+              </div>
+              <div class="portfolio-item">
+                <h4>Berkshire Hathaway</h4>
+
+                <div class="portfolio-img-wrapper">
+                  <a
+                    href="https://rsdesoto.github.io/webpage_recreate/berkshire_hathaway/index.html"
+                  >
+                    <img
+                      class="portfolio-img"
+                      src="./assets/images/website-recreate/berkshire-hathaway.png"
+                      alt="test image"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3><a id="portfolio-work"></a>Work Experience</h3>
+              <h4>
+                { Skip to:
+                <a href="#portfolio-projects">Projects</a> /
+                <a href="#portfolio-websites">Website Recreations</a> /
+                <a href="#portfolio-current">Current Project</a>
+                }
+              </h4>
+            </div>
+
+            <div class="portfolio-row">
+              <div class="portfolio-text-wrapper">
+                <h4>Analytics and Modeling</h4>
+
+                <ul>
+                  <li>
+                    Enhanced and maintained quarterly models to integrate client
+                    business strategy with a variety of market data to identify
+                    valuable customers on a national scale.
+                  </li>
+                  <li>
+                    Generated nation-, region-, and territory-level target lists
+                    that balanced reaching valuable customers, rep-submitted
+                    information, and historical information from a variety of
+                    third-party vendors.
+                  </li>
+                  <li>
+                    Provided timely and accurate “what if?” analyses on
+                    quarterly models and client sales force alignments to
+                    provide actionable insights to the client.
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-text-wrapper">
+                <h4>Data Processing</h4>
+
+                <ul>
+                  <li>
+                    Processed weekly, monthly, and quarterly deliveries of
+                    client data, for tables of up to 3 million records.
+                  </li>
+                  <li>
+                    Designed and implemented fully automated quality checks and
+                    data clean-up to ensure accuracy of data and client-side
+                    implementation of business rules for monthly and quarterly
+                    feeds.
+                  </li>
+                  <li>
+                    Designed and implemented an automated weekly process to
+                    check the accuracy of data provided from several third-party
+                    vendors, including flexible checks depending on several
+                    different contracted layouts, and accurately replacing
+                    incomplete data with restatements.
+                  </li>
+                  <li>
+                    Quickly and accurately led updates to handle unexpected and
+                    unannounced major changes to to the layouts of data,
+                    ensuring tight quarterly timelines were not affected.
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-text-wrapper">
+                <h4>Data Reporting</h4>
+
+                <ul>
+                  <li>
+                    Created accurate, timely quarterly data feeds for client
+                    downstream processing, including facilitating updates to the
+                    process and layouts.
+                  </li>
+                  <li>
+                    Generated automated and accurate weekly, monthly, and
+                    quarterly compliance and payout reports on behalf of the
+                    client, including an automated email generation tool and
+                    flexible options for exporting data.
+                  </li>
+                  <li>
+                    Developed and implemented territory call plan reports in
+                    Excel for use by the field, and automated generation to
+                    quickly and accurately generate between 500 and 750 reports
+                    every quarter, including custom userforms and macros.
+                  </li>
+                  <li>
+                    Developed, enhanced, implemented, and/or maintained a
+                    variety summary reports for use by the client, increasing
+                    automation, accuracy, and ease of use.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3><a id="portfolio-current"></a>Current Project</h3>
+              <h4>
+                { Skip to:
+                <a href="#portfolio-projects">Projects</a> /
+                <a href="#portfolio-websites">Website Recreations</a> /
+                <a href="#portfolio-work">Work Experience</a> }
+              </h4>
+            </div>
+
+            <div class="portfolio-row">
+              <div class="portfolio-text-wrapper">
+                <p>
+                  I'm currently working on a personal book tracker app. I wanted
+                  a place I could share my thoughts about the books I read,
+                  while also keeping it personal -- I'll be the only person with
+                  the ability to add/review books.
+                </p>
+                <p>
+                  I'm building it out currently using Node.js and jQuery; I plan
+                  on refactoring this a couple of times to use Django for the
+                  server and React.js for the front-end.
+                </p>
+              </div>
+              <div class="portfolio-currentproject-wrapper">
+                <a href="https://github.com/rsdesoto/booksite">
+                  <img
+                    class="portfolio-img"
+                    src="./assets/images/current-project/booksite.png"
+                    alt="test image"
+                  />
                 </a>
               </div>
-              <div class="col-sm">
-                <a href="https://rsdesoto.github.io/clickygame/">
-                  <div class="card bg-dark text-white">
-                    <img
-                      class="card-img"
-                      src="./images/clicky-game.png"
-                      alt="React Clicky Game"
-                    />
-                    <div class="card-img-overlay-custom">
-                      <h5 class="card-title card-format">React Clicky Game</h5>
-                    </div>
-                  </div>
-                </a>
+
+              <div class="portfolio-text-wrapper">
+                <p>
+                  Currently I've built out the book list itself; I am currently
+                  working on updating the book details page and putting in
+                  functionality to update a review or progress through a book.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="spacer-bottom">
-        <!--
-                    this is a placeholder to make the grid work properly with a fixed header
-                -->
-      </div>
+      </main>
     </div>
-
-    <footer class="footer"><h6>copyright ©</h6></footer>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"
-  ></script>
+
+  <script src="./assets/javascript/main.js"></script>
 </html>
