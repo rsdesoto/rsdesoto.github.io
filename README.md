@@ -1,6 +1,6 @@
-# portfolio-redesign
+# [Portfolio site](rsdesoto.github.io)
 
-A repo to test my redesigned portfolio before deploying on rsdesoto.github.com.
+My current professional portfolio.
 
 ### Credits
 
