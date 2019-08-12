@@ -67,22 +67,22 @@
 <!-- standalone note view -->
 <!-- modals -->
 
+<!-- include: the problem, challenges, role in project -->
           <div class="portfolio-section">
             <div class="portfolio-section-header">
-              <h3>Global Search Filtering</h3>
+              <h3>Global Search Filtering - HTML, CSS, React</h3>
             </div>
 
             <div class="portfolio-row-job-specific">
               <p>
                 Clients requested the ability to filter our search page to specific types of
-                information or information with specific user-entered tags.
+                information or information with specific user-entered tags. I was tasked with creating the user interface.
               </p>
               <p>
-                I was tasked with creating the user interface. I worked with our product
-                design team to iron out the implementation. After some back and forth around
-                the organization of each section and how to present potentially dozens of available tags to the user,
-                we settled on the final design -- types of results (e.g., emails, notes, organizations) availble as filter options were
-                presented as a single section, and a separate modal was created for user-entered tags. Tags that are selected are displayed on the main search page.
+                The biggest challenge was creating an intuitive design -- I found some of the initial designs confusing once I started implementing them, so I worked with our product design team to iron out some of the wrinkles.
+                After some back and forth on how best to display the types of results that could be displayed and how to present potentially dozens of available tags to the user,
+                we settled on the final design -- types of results (e.g., emails, notes, organizations) availble as filter options are
+                presented in a single section, and a separate modal displays all user-entered tags. Tags that are selected are displayed on the main search page so users can easily see what filters are applied.
               </p>
               <p>
                 As part of this project, I created nicely styled checkboxes and 3-state checkboxes
@@ -127,10 +127,81 @@
             </div>
           </div>
 
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Entity Mapping Modal - Ruby on Rails, HTML, CSS, React</h3>
+            </div>
+
+            <div class="portfolio-row-job-specific">
+              <p>
+                The application features integrations with 3rd party data. Prior to this project,
+                mapping entities in the application to entities in Solovis, an instutional investment
+                management program, had to be done by a member of the team. These mappings could not
+                be set up by users of the app.
+              </p>
+              <p>
+                A teammate and I worked together to create the necessary internal API endpoints,
+                update an API client used to communicate with the Solovis API, and implement a
+                mapping modal on the front end. Major challenges included figuring out what information was and was not available in the Solovis API, working out some implementation details around editing and deleting existing mappings, and handling hand-offs of the project between two different people.
+              </p>
+              <p>
+                Additionally, some of the components of the front-end were fairly complicated --
+                in particular, I created a text field that filtered a dropdown list of existing
+                entities in Solovis that were available to be mapped to. I had to get clever
+                with using tabindex along with mouse down events to group the dropdown with
+                the text box, allowing them to be treated as a single distinct component with
+                unified behavior instead of two completely separate elements.
+              </p>
+            </div>
+
+            <h4>Screenshots</h4>
+
+            <div class="portfolio-job-screenshots">
+              <div class="portfolio-row-job-specific">
+                <div class="portfolio-job-caption">
+                  Once a mapping has been selected, the disabled text boxes are filled automatically with the relevant information.
+                </div>
+                <img
+                  class="portfolio-img"
+                  src="./assets/images/itgny-features/entity_mapping_blank.png"
+                  alt="Blank entity mapping modal"
+                />
+              </div>
+              <div class="portfolio-row-job-specific">
+                <div class="portfolio-job-caption">
+                  Clicking on the search field brings up a full list of all available entities. Typing filters the list.
+                </div>
+                <img
+                  class="portfolio-img"
+                  src="./assets/images/itgny-features/entity_mapping_search.png"
+                  alt="Filter list example"
+                />
+              </div>
+
+              <div class="portfolio-row-job-specific">
+                <div class="portfolio-job-caption">
+                  Once an entity has been mapped, that relationship is displayed in the modal.
+                </div>
+                <img
+                  class="portfolio-img"
+                  src="./assets/images/itgny-features/entity_mapping_exists.png"
+                  alt="Mapped entity display"
+                />
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
 
           <div class="portfolio-section">
             <div class="portfolio-section-header">
-              <h3>Standalone Note View</h3>
+              <h3>Standalone Note View - HTML, CSS, React</h3>
             </div>
 
             <div class="portfolio-row">
@@ -192,7 +263,7 @@
 
           <div class="portfolio-section">
             <div class="portfolio-section-header">
-              <h3>Modal Unification</h3>
+              <h3>Modal Unification - HTML, CSS, React</h3>
             </div>
 
             <div class="portfolio-row">
