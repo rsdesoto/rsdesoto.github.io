@@ -143,6 +143,19 @@ main {
   height: 300px;
 }
 
+.portfolio-row-job-specific {
+  margin: 20px 0;
+}
+
+.portfolio-job-screenshots {
+  width: 90%;
+  margin: auto;
+}
+
+.portfolio-job-caption {
+  margin: 7px 0;
+}
+
 /* mobile responsiveness and media queries */
 
 /* breakpoints: 600px, 900px, 1200px, and 1800px */
