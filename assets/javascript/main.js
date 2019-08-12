@@ -1,5 +1,3 @@
-$('.inline').modaal();
-
 $('.search_filter').modaal({
     type: 'image'
 });
@@ -16,3 +14,6 @@ $('.mobile_global_view').modaal({
     type: 'image'
 });
 
+$('.modal_unity').modaal({
+    type: 'image'
+});
