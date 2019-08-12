@@ -4,4 +4,6 @@ My current professional portfolio.
 
 ### Credits
 
-Thanks to @sublimemarch for help with this!
+I used [Modaal](https://github.com/humaan/Modaal) for the modals.
+
+Additionally, thanks to @sublimemarch for help with design!
