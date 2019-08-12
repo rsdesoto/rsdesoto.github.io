@@ -154,6 +154,25 @@ main {
 
 .portfolio-job-caption {
   margin: 7px 0;
+  line-height: 1.2;
+}
+
+.portfolio-job-thumb {
+  width: 100%;
+}
+
+.portfolio-job-screencap-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.portfolio-job-example-card {
+  width: 32%;
+}
+
+.portfolio-job-example-caption {
+  margin-top: 10px;
 }
 
 /* mobile responsiveness and media queries */
