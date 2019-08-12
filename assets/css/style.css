@@ -152,11 +152,6 @@ main {
   margin: auto;
 }
 
-.portfolio-job-caption {
-  margin: 7px 0;
-  line-height: 1.2;
-}
-
 .portfolio-job-thumb {
   width: 100%;
 }
@@ -173,6 +168,7 @@ main {
 
 .portfolio-job-example-caption {
   margin-top: 10px;
+  line-height: 1.2;
 }
 
 /* mobile responsiveness and media queries */

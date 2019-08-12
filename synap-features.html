@@ -211,7 +211,6 @@
             </div>
           </div>
 
-
           <div class="portfolio-section">
             <div class="portfolio-section-header">
               <h3>Standalone Note View - HTML, CSS, React</h3>
@@ -219,23 +218,19 @@
 
             <div class="portfolio-row-job-specific">
               <p>
-                The application features integrations with 3rd party data. Prior to this project,
-                mapping entities in the application to entities in Solovis, an instutional investment
-                management program, had to be done by a member of the team. These mappings could not
-                be set up by users of the app.
+                Clients requested a print-specific view of notes. Prior to this feature,
+                users would need to either screencap notes in the application, which would be inconvenient
+                for longer notes and could include design elements that would be visually distracting in a
+                print-out, or copy and paste information from the application to a printable
+                document, which could introduce bad formatting and potentially lose information.
               </p>
               <p>
-                A teammate and I worked together to create the necessary internal API endpoints,
-                update an API client used to communicate with the Solovis API, and implement a
-                mapping modal on the front end. Major challenges included figuring out what information was and was not available in the Solovis API, working out some implementation details around editing and deleting existing mappings, and handling hand-offs of the project between two different people.
+                I created a separate section of the application solely for print views, removing
+                unnecessary features of the main app and implementing only the design elements and information
+                necessary for displaying the note.
               </p>
               <p>
-                Additionally, some of the components of the front-end were fairly complicated --
-                in particular, I created a text field that filtered a dropdown list of existing
-                entities in Solovis that were available to be mapped to. I had to get clever
-                with using tabindex along with mouse down events to group the dropdown with
-                the text box, allowing them to be treated as a single distinct component with
-                unified behavior instead of two completely separate elements.
+                I also created functionality to hide the comments associated with a note as needed.
               </p>
             </div>
 
@@ -243,192 +238,172 @@
 
             <div class="portfolio-job-screencap-row">
               <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/entity_mapping_blank.png" data-group="entity_mapping" class="entity_mapping">
+                <a href="./assets/images/itgny-features/standalone_note_view_timeline.png" data-group="note_view" class="note_view">
                   <img
                     class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/entity_mapping_blank.png"
-                    alt="Blank entity mapping modal"
+                    src="./assets/images/itgny-features/standalone_note_view_timeline.png"
+                    alt="Note views on the timeline"
                   />
                 </a>
                 <div class="portfolio-job-example-caption">
-                  Once a mapping has been selected, the disabled text boxes are filled automatically with the relevant information.
+                  Note views on the main timeline include headers and sidebars and do not print nicely.
                 </div>
               </div>
 
               <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/entity_mapping_search.png" data-group="entity_mapping" class="entity_mapping">
+                <a href="./assets/images/itgny-features/standalone_note_view_comments.png" data-group="note_view" class="note_view">
                   <img
                     class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/entity_mapping_search.png"
-                    alt="Filter list example"
+                    src="./assets/images/itgny-features/standalone_note_view_comments.png"
+                    alt="Note view with comments"
                   />
                 </a>
                 <div class="portfolio-job-example-caption">
-                  Clicking on the search field brings up a full list of all available entities. Typing filters the list.
+                  Clicking the pop-out icon takes you to a print view.
                 </div>
               </div>
 
               <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/entity_mapping_exists.png" data-group="entity_mapping" class="entity_mapping">
+                <a href="./assets/images/itgny-features/standalone_note_view_hidden_comments.png" data-group="note_view" class="note_view">
                   <img
                     class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/entity_mapping_exists.png"
-                    alt="Mapped entity display"
+                    src="./assets/images/itgny-features/standalone_note_view_hidden_comments.png"
+                    alt="Note view without comments"
                   />
                 </a>
                 <div class="portfolio-job-example-caption">
-                  Once an entity has been mapped, that relationship is displayed in the modal.
+                  Comments on the print view can be hidden or shown, depending on what the user needs.
                 </div>
               </div>
             </div>
           </div>
 
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Global Search Mobile View - HTML, CSS, React</h3>
+            </div>
 
+            <div class="portfolio-row-job-specific">
+              <p>
+                In addition to filtering on the desktop view, we implemented mobile-specific filtering and design choices.
+              </p>
+              <p>
+                One of the biggest challenges was getting the new tag placement. A teammate and I used CSS Grid to align the tags to the right of search results in desktop view, and below the results section in mobile view, for a cleaner and more streamlined UI.
+              </p>
+              <p>
+                I also created functionality to hide the comments associated with a note as needed.
+              </p>
+            </div>
 
+            <h4>Screenshots</h4>
 
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_desktop.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_desktop.png"
+                    alt="Note views on the timeline"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  On the desktop view, the filter section is to the right of the search results. Tags (the colored lozenges on each result) are displayed on the right side of each result.
+                </div>
+              </div>
 
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_mobile.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_mobile.png"
+                    alt="Note view with comments"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Mobile results have a different structure, created using CSS Grid.
+                </div>
+              </div>
 
-
-
-
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_filter.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_filter.png"
+                    alt="Note view without comments"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Mobile filtering is a drawer, accessed via the funnel button.
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="portfolio-section">
             <div class="portfolio-section-header">
-              <h3>Standalone Note View - HTML, CSS, React</h3>
+              <h3>Modal Style Unification - HTML, CSS, React</h3>
             </div>
 
-            <div class="portfolio-row">
-
-                <p>
-                  Clients requested a print-specific view of notes. Prior to this feature, there was no good way to print a note -- clients would either have to screencap their screens, or copy and paste information from the application to a printable document.
-                </p>
-                <p>
-                  I created a separate section of the application, removing the majority of unneeded features and implementing only the information needed to show the note.
-                </p>
-
-              <div class="portfolio-text-wrapper">
-                Reusable components created:
-                <ul>
-                  <li>
-                    Standalone section of the app without additional features
-                  </li>
-                  <li>
-                    Sliding toggle
-                  </li>
-                  <li>
-                    Print functionality
-                  </li>
-                </ul>
-              </div>
+            <div class="portfolio-row-job-specific">
+              <p>
+                Before I started on the project, modal implementation was somewhat scattershot -- some modals had headers and some didn't, some modals had buttons at the top and some had buttons at the bottom, and so on. After I implemented the new tag modal design, I went through the app to switch all modals to a single unified style.
+              </p>
+              <p>
+                The biggest challenge here was actually around pulling out existing styles -- our modal had originally been a <a href="https://react.foundation/">Foundation</a> modal with built-in padding. Several of the modals in the app had a lot of brittle styling around overriding the existing modal styles.
+              </p>
+              <p>
+                I pulled out unnecessary CSS styling I also created a new ModalHeader component, which gave us a consistent style and functionality for all our modals, allowing easier maintenance and unified user experience.
+              </p>
             </div>
 
+            <h4>Screenshots</h4>
 
-            <div class="portfolio-row">
-              <div class="portfolio-img-wrapper">
-                <img
-                  class="portfolio-img"
-                  src="./assets/images/itgny-features/search_filter_type_only.png"
-                  alt="Search filter with kinds only"
-              />
-                The note view in the main app includes links to the standalone note view and a link to automatically print the standalone note view.
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_old_modals.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_old_modals.png"
+                    alt="Old modals"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Old modals had a variety of styles and functionalities.
+                </div>
               </div>
 
-              <div class="portfolio-img-wrapper">
-                <img
-                  class="portfolio-img"
-                  src="./assets/images/itgny-features/search_filter_tag_modal.png"
-                  alt="Search filter with kinds only"
-              />
-                Comments on each note are available in the standalone view; these comments can be hidden, if desired.
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_new_modals.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_new_modals.png"
+                    alt="New modals"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Updated modal styles always include buttons in the header and more elegant formatting.
+                </div>
               </div>
 
-              <div class="portfolio-img-wrapper">
-                <img
-                  class="portfolio-img"
-                  src="./assets/images/itgny-features/search_filter_applied.png"
-                  alt="Search filter with kinds only"
-              />
-                The print button allows users to print to their printer or to PDF or other export.
-              </div>
-            </div>
-          </div>
-
-
-          <div class="portfolio-section">
-            <div class="portfolio-section-header">
-              <h3>Modal Unification - HTML, CSS, React</h3>
-            </div>
-
-            <div class="portfolio-row">
-              <div class="portfolio-text-wrapper">
-                <p>
-                  Several different modal styles were being used in the app. Additionally,
-                </p>
-                <p>
-                  I created a separate section of the application, removing the majority of unneeded features and implementing only the information needed to show the note.
-                </p>
-              </div>
-              <div class="portfolio-text-wrapper">
-                Reusable components created:
-                <ul>
-                  <li>
-                    Standalone section of the app without additional features
-                  </li>
-                  <li>
-                    Sliding toggle
-                  </li>
-                  <li>
-                    Print functionality
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-
-            <div class="portfolio-row">
-              <div class="portfolio-img-wrapper">
-                <img
-                  class="portfolio-img"
-                  src="./assets/images/itgny-features/search_filter_type_only.png"
-                  alt="Search filter with kinds only"
-              />
-                The note view in the main app includes links to the standalone note view and a link to automatically print the standalone note view.
-              </div>
-
-              <div class="portfolio-img-wrapper">
-                <img
-                  class="portfolio-img"
-                  src="./assets/images/itgny-features/search_filter_tag_modal.png"
-                  alt="Search filter with kinds only"
-              />
-                Comments on each note are available in the standalone view; these comments can be hidden, if desired.
-              </div>
-
-              <div class="portfolio-img-wrapper">
-                <img
-                  class="portfolio-img"
-                  src="./assets/images/itgny-features/search_filter_applied.png"
-                  alt="Search filter with kinds only"
-              />
-                The print button allows users to print to their printer or to PDF or other export.
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_example.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_example.png"
+                    alt="Example modal"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  The new modal styling matches the overall look and feel of the app.
+                </div>
               </div>
             </div>
           </div>
-
-
-
-          </div>
-
 
         </div>
       </main>
     </div>
 
-
-    <a href="#inline" class="inline">Show</a>
-    <div id="inline" style="display:none;">
-    	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-    </div>
 
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.min.js"

@@ -7,3 +7,12 @@ $('.search_filter').modaal({
 $('.entity_mapping').modaal({
     type: 'image'
 });
+
+$('.note_view').modaal({
+    type: 'image'
+});
+
+$('.mobile_global_view').modaal({
+    type: 'image'
+});
+
