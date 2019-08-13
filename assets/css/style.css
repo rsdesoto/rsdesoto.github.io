@@ -213,6 +213,14 @@ main {
   .portfolio-currentproject-wrapper {
     height: 200px;
   }
+
+  .portfolio-job-screencap-row {
+    display: block;
+  }
+
+  .portfolio-job-example-card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {

@@ -67,13 +67,6 @@
             <h1>Imagineer Technology Group</h1>
           </div>
 
-<!-- remote identifier mapping -->
-<!-- global search filtering and tag -->
-<!-- mobile globile -->
-<!-- standalone note view -->
-<!-- modals -->
-
-<!-- include: the problem, challenges, role in project -->
           <div class="portfolio-section">
             <div class="portfolio-section-header">
               <h3>Global Search Filtering - HTML, CSS, React</h3>
@@ -150,7 +143,146 @@
                 </div>
               </div>
             </div>
+          </div>
 
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Global Search Mobile View - HTML, CSS, React</h3>
+            </div>
+
+            <div class="portfolio-row-job-specific">
+              <p>
+                In addition to filtering on desktop, we implemented mobile-specific filtering
+                and design around the search page.
+              </p>
+              <p>
+                Instead of a sidebar with filtering options, I implemented an action sheet. This
+                element and the button controlling it are both hidden in desktop view, and only
+                displayed on small screen sizes. I worked with design on how to display tags
+                without needing a modal.
+              </p>
+              <p>
+                One of the biggest challenges was adjusting the the layout of search results. A
+                teammate and I used CSS Grid to lay out elements of each result, which let us
+                easily adjust how information is displayed in desktop versus mobile views.
+              </p>
+            </div>
+
+            <h4>Screenshots</h4>
+
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_desktop.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_desktop.png"
+                    alt="Note views on the timeline"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  On the desktop view, the filter section is to the right of the search results.
+                  Tags (the colored lozenges on each result) are displayed on the right side of each result.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_mobile.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_mobile.png"
+                    alt="Note view with comments"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Mobile results have a different structure. Some design elements are adjusted using CSS Grid,
+                  while others are only displayed on mobile or on desktop.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_filter.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_filter.png"
+                    alt="Note view without comments"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Mobile filtering is a drawer, accessed via the funnel button.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Modal Style Unification - HTML, CSS, React</h3>
+            </div>
+
+            <div class="portfolio-row-job-specific">
+              <p>
+                Before I started on this project, modal implementation was somewhat scattershot -- some modals
+                had headers and some didn't, some modals had buttons at the top and some had buttons at the
+                bottom, and so on. After I implemented the new tag modal design, I went through the app to
+                update all modals to a single unified style.
+              </p>
+              <p>
+                The biggest challenge here was actually around pulling out existing styles -- our modal
+                had originally been a <a href="https://react.foundation/">Foundation</a> modal with some
+                built-in styling. Several of the modals in the app had a lot of brittle styling designed
+                to override the existing modal styles. I removed as much styling as I could from the base
+                modal, adding component-specific CSS as needed.
+              </p>
+              <p>
+                I also created a new ModalHeader component that put buttons and other functionality into
+                the modal header. This gave us a consistent style and functionality for all our modals,
+                allowing easier maintenance and unified user experience.
+              </p>
+            </div>
+
+            <h4>Screenshots</h4>
+
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_old_modals.png" data-group="modal_unity" class="modal_unity">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_old_modals.png"
+                    alt="Old modals"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Old modals had a variety of styles and functionalities.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_new_modals.png" data-group="modal_unity" class="modal_unity">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_new_modals.png"
+                    alt="New modals"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Updated modal styles always include buttons in the header and more elegant formatting.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_example.png" data-group="modal_unity" class="modal_unity">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_example.png"
+                    alt="Example modal"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  The new modal styling matches the overall look and feel of the app.
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="portfolio-section">
             <div class="portfolio-section-header">
@@ -294,150 +426,9 @@
               </div>
             </div>
           </div>
-
-          <div class="portfolio-section">
-            <div class="portfolio-section-header">
-              <h3>Global Search Mobile View - HTML, CSS, React</h3>
-            </div>
-
-            <div class="portfolio-row-job-specific">
-              <p>
-                In addition to filtering on desktop, we implemented mobile-specific filtering
-                and design around the search page.
-              </p>
-              <p>
-                Instead of a sidebar with filtering options, I implemented an action sheet. This
-                element and the button controlling it are both hidden in desktop view, and only
-                displayed on small screen sizes. I worked with design on how to display tags
-                without needing a modal.
-              </p>
-              <p>
-                One of the biggest challenges was adjusting the the layout of search results. A
-                teammate and I used CSS Grid to lay out elements of each result, which let us
-                easily adjust how information is displayed in desktop versus mobile views.
-              </p>
-            </div>
-
-            <h4>Screenshots</h4>
-
-            <div class="portfolio-job-screencap-row">
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/mobile_view_desktop.png" data-group="mobile_global_view" class="mobile_global_view">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/mobile_view_desktop.png"
-                    alt="Note views on the timeline"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  On the desktop view, the filter section is to the right of the search results.
-                  Tags (the colored lozenges on each result) are displayed on the right side of each result.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/mobile_view_mobile.png" data-group="mobile_global_view" class="mobile_global_view">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/mobile_view_mobile.png"
-                    alt="Note view with comments"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Mobile results have a different structure. Some design elements are adjusted using CSS Grid,
-                  while others are only displayed on mobile or on desktop.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/mobile_view_filter.png" data-group="mobile_global_view" class="mobile_global_view">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/mobile_view_filter.png"
-                    alt="Note view without comments"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Mobile filtering is a drawer, accessed via the funnel button.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-section">
-            <div class="portfolio-section-header">
-              <h3>Modal Style Unification - HTML, CSS, React</h3>
-            </div>
-
-            <div class="portfolio-row-job-specific">
-              <p>
-                Before I started on this project, modal implementation was somewhat scattershot -- some modals
-                had headers and some didn't, some modals had buttons at the top and some had buttons at the
-                bottom, and so on. After I implemented the new tag modal design, I went through the app to
-                update all modals to a single unified style.
-              </p>
-              <p>
-                The biggest challenge here was actually around pulling out existing styles -- our modal
-                had originally been a <a href="https://react.foundation/">Foundation</a> modal with some
-                built-in styling. Several of the modals in the app had a lot of brittle styling designed
-                to override the existing modal styles. I removed as much styling as I could from the base
-                modal, adding component-specific CSS as needed.
-              </p>
-              <p>
-                I also created a new ModalHeader component that put buttons and other functionality into
-                the modal header. This gave us a consistent style and functionality for all our modals,
-                allowing easier maintenance and unified user experience. 
-              </p>
-            </div>
-
-            <h4>Screenshots</h4>
-
-            <div class="portfolio-job-screencap-row">
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/modal_unity_old_modals.png" data-group="modal_unity" class="modal_unity">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/modal_unity_old_modals.png"
-                    alt="Old modals"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Old modals had a variety of styles and functionalities.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/modal_unity_new_modals.png" data-group="modal_unity" class="modal_unity">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/modal_unity_new_modals.png"
-                    alt="New modals"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Updated modal styles always include buttons in the header and more elegant formatting.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/modal_unity_example.png" data-group="modal_unity" class="modal_unity">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/modal_unity_example.png"
-                    alt="Example modal"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  The new modal styling matches the overall look and feel of the app.
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </main>
     </div>
-
 
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.min.js"
