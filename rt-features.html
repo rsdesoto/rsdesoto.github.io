@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ry DeSoto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- style sheets: reset, fonts, fontstyles, and styles -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/font.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/modaal.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="header-content">
+          <a href="./index.html"> <h2 class="header-name">Ry DeSoto</h2></a>
+          <div class="header-right">
+            <a href="./index.html"> <h4 class="header-link">About</h4></a>
+            <a href="./portfolio.html">
+              <h4 class="header-link">Portfolio</h4></a
+            >
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="content-container">
+          <div class="portfolio-section">
+            <h1>Imagineer Technology Group</h1>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Global Search Filtering - HTML, CSS, React</h3>
+            </div>
+
+            <div class="portfolio-row-job-specific">
+              <p>
+                Clients requested the ability to filter our search page to only return specific types of
+                results, or results with user-entered tags. I was responsible for implementing the entire
+                user interface for this feature.
+              </p>
+              <p>
+                The biggest challenge was creating an intuitive design -- I found some of the expected behavior
+                of the initial designs confusing once I started implementing them, so I worked with our product
+                design team to iron out some of the wrinkles. After some back and forth on how best to display
+                the types of results that could be displayed and how to present potentially dozens of available
+                tags to the user, we settled on the final design collaboratively.
+              </p>
+              <p>
+                I also found the technical challenge of presenting tags interesting. In order to avoid
+                overwhelming the user, we created a separate modal with all tags available to filter on;
+                once some tags have been selected, they appear on the main search page. Moving data from
+                component to component was a fun challenge.
+              </p>
+              <p>
+                As part of this project, I created nicely styled checkboxes and 3-state checkboxes for
+                checking/unchecking an entire group of checkboxes.
+              </p>
+            </div>
+
+            <h4>Screenshots</h4>
+
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/search_filter_type_only.png" data-group="search_filter" class="search_filter">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/search_filter_type_only.png"
+                    alt="Search filter with kinds only"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Results can be filtered by type or by tag. Generally, clients only had between 5-15
+                  available types; some clients had more than a hundred tags. In order to keep the tag
+                  section from overwhelming the screen, only tags being used to filter results were shown.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/search_filter_tag_modal.png" data-group="search_filter" class="search_filter">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/search_filter_tag_modal.png"
+                    alt="Tag modal view"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Both the general filter section and the tag modal feature a 3-state checkbox. Clicking
+                  a blank checkbox selects all options. Clicking a checked checkbox or a "-" checkbox
+                  deselects all options.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/search_filter_applied.png" data-group="search_filter" class="search_filter">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/search_filter_applied.png"
+                    alt="Selected tags are displayed"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Selected tags are included in the sidebar so users can see at a glance what they have selected.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Global Search Mobile View - HTML, CSS, React</h3>
+            </div>
+
+            <div class="portfolio-row-job-specific">
+              <p>
+                In addition to filtering on desktop, we implemented mobile-specific filtering
+                and design around the search page.
+              </p>
+              <p>
+                Instead of a sidebar with filtering options, I implemented an action sheet. This
+                element and the button controlling it are both hidden in desktop view, and only
+                displayed on small screen sizes. I worked with design on how to display tags
+                without needing a modal.
+              </p>
+              <p>
+                One of the biggest challenges was adjusting the the layout of search results. A
+                teammate and I used CSS Grid to lay out elements of each result, which let us
+                easily adjust how information is displayed in desktop versus mobile views.
+              </p>
+            </div>
+
+            <h4>Screenshots</h4>
+
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_desktop.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_desktop.png"
+                    alt="Note views on the timeline"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  On the desktop view, the filter section is to the right of the search results.
+                  Tags (the colored lozenges on each result) are displayed on the right side of each result.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_mobile.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_mobile.png"
+                    alt="Note view with comments"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Mobile results have a different structure. Some design elements are adjusted using CSS Grid,
+                  while others are only displayed on mobile or on desktop.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/mobile_view_filter.png" data-group="mobile_global_view" class="mobile_global_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/mobile_view_filter.png"
+                    alt="Note view without comments"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Mobile filtering is a drawer, accessed via the funnel button.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Modal Style Unification - HTML, CSS, React</h3>
+            </div>
+
+            <div class="portfolio-row-job-specific">
+              <p>
+                Before I started on this project, modal implementation was somewhat scattershot -- some modals
+                had headers and some didn't, some modals had buttons at the top and some had buttons at the
+                bottom, and so on. After I implemented the new tag modal design, I went through the app to
+                update all modals to a single unified style.
+              </p>
+              <p>
+                The biggest challenge here was actually around pulling out existing styles -- our modal
+                had originally been a <a href="https://react.foundation/">Foundation</a> modal with some
+                built-in styling. Several of the modals in the app had a lot of brittle styling designed
+                to override the existing modal styles. I removed as much styling as I could from the base
+                modal, adding component-specific CSS as needed.
+              </p>
+              <p>
+                I also created a new ModalHeader component that put buttons and other functionality into
+                the modal header. This gave us a consistent style and functionality for all our modals,
+                allowing easier maintenance and unified user experience.
+              </p>
+            </div>
+
+            <h4>Screenshots</h4>
+
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_old_modals.png" data-group="modal_unity" class="modal_unity">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_old_modals.png"
+                    alt="Old modals"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Old modals had a variety of styles and functionalities.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_new_modals.png" data-group="modal_unity" class="modal_unity">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_new_modals.png"
+                    alt="New modals"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Updated modal styles always include buttons in the header and more elegant formatting.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/modal_unity_example.png" data-group="modal_unity" class="modal_unity">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/modal_unity_example.png"
+                    alt="Example modal"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  The new modal styling matches the overall look and feel of the app.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Entity Mapping Modal - Ruby on Rails, HTML, CSS, React</h3>
+            </div>
+
+            <div class="portfolio-row-job-specific">
+              <p>
+                The application features integrations with 3rd party data; one of the main integrations
+                is with Solovis, an institutional investment management program. Prior to the addition
+                of this feature, mapping entities to Solovis had to be done by a member of the team and
+                could not be done independently by users of the app.
+              </p>
+              <p>
+                A teammate and I worked together to create the necessary internal API endpoints, update
+                an API client used to communicate with the Solovis API, and implement a mapping modal on
+                the front end. Major challenges included figuring out what information was and was not
+                available in the Solovis API, working out some implementation details around around the
+                user interface, and handling hand-offs of the project between two different people.
+              </p>
+              <p>
+                One of the meatier technical challenges was around creating a text input that filtered a
+                dropdown list of existing entities in Solovis that were available for mapping. I had to
+                get clever with using tabindex along with mouse down events to group the dropdown with
+                the text box, allowing them to be treated as a single distinct component with unified
+                focus and blur behavior instead of two completely separate elements.
+              </p>
+            </div>
+
+            <h4>Screenshots</h4>
+
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/entity_mapping_blank.png" data-group="entity_mapping" class="entity_mapping">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/entity_mapping_blank.png"
+                    alt="Blank entity mapping modal"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Once a mapping has been selected, the disabled text boxes are filled automatically
+                  with the relevant information.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/entity_mapping_search.png" data-group="entity_mapping" class="entity_mapping">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/entity_mapping_search.png"
+                    alt="Filter list example"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Clicking on the search field brings up a full list of all available entities.
+                  Typing filters the list.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/entity_mapping_exists.png" data-group="entity_mapping" class="entity_mapping">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/entity_mapping_exists.png"
+                    alt="Mapped entity display"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Once an entity has been mapped, that relationship is displayed in the modal.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-section">
+            <div class="portfolio-section-header">
+              <h3>Standalone Note View - HTML, CSS, React</h3>
+            </div>
+
+            <div class="portfolio-row-job-specific">
+              <p>
+                Clients requested a print-specific view of notes. Prior to this feature, users
+                needed to either screencap notes in the application, which would be inconvenient
+                for longer notes and would include visually distracting design elements; or copy
+                and paste information from the application to a printable document, which would
+                not be formatted correctly and could potentially not have all the information
+                the user needed.
+              </p>
+              <p>
+                I created a separate section of the application solely for print views, removing
+                unnecessary features of the main app. I only implemented design elements and
+                information necessary to display the note, while also still including useful
+                features, like the ability to follow links to other parts of the app.
+              </p>
+              <p>
+                I also added functionality to hide the comments associated with a note as needed.
+              </p>
+            </div>
+
+            <h4>Screenshots</h4>
+
+            <div class="portfolio-job-screencap-row">
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/standalone_note_view_timeline.png" data-group="note_view" class="note_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/standalone_note_view_timeline.png"
+                    alt="Note views on the timeline"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Note views on the main timeline include headers and sidebars and do not print nicely.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/standalone_note_view_comments.png" data-group="note_view" class="note_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/standalone_note_view_comments.png"
+                    alt="Note view with comments"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Clicking the pop-out icon takes you to a print view.
+                </div>
+              </div>
+
+              <div class="portfolio-job-example-card">
+                <a href="./assets/images/itgny-features/standalone_note_view_hidden_comments.png" data-group="note_view" class="note_view">
+                  <img
+                    class="portfolio-job-thumb"
+                    src="./assets/images/itgny-features/standalone_note_view_hidden_comments.png"
+                    alt="Note view without comments"
+                  />
+                </a>
+                <div class="portfolio-job-example-caption">
+                  Comments on the print view can be hidden or shown, depending on what the user needs.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+
+    <script src="./assets/javascript/modaal.min.js"></script>
+    <script src="./assets/javascript/main.js"></script>
+
+  </body>
+
+
+</html>
