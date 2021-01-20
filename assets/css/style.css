@@ -156,7 +156,7 @@ main {
 
 .portfolio-job-screencap-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 30px;
 }
 

@@ -17,3 +17,15 @@ $('.mobile_global_view').modaal({
 $('.modal_unity').modaal({
     type: 'image'
 });
+
+$('.sms_alerts').modaal({
+    type: 'image'
+});
+
+$('.qbr_page').modaal({
+    type: 'image'
+});
+
+$('.ghostwriter_response').modaal({
+    type: 'image'
+});

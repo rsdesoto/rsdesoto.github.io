@@ -64,82 +64,42 @@
       <main>
         <div class="content-container">
           <div class="portfolio-section">
-            <h1>Imagineer Technology Group</h1>
+            <h1>ReviewTrackers</h1>
           </div>
 
           <div class="portfolio-section">
             <div class="portfolio-section-header">
-              <h3>Global Search Filtering - HTML, CSS, React</h3>
+              <h3>SMS Alerts</h3>
             </div>
 
             <div class="portfolio-row-job-specific">
               <p>
-                Clients requested the ability to filter our search page to only return specific types of
-                results, or results with user-entered tags. I was responsible for implementing the entire
-                user interface for this feature.
+                The platform includes the ability to receive email alerts when a new review has been submitted.
+                As part of ongoing efforts to improve alerts, my team was tasked with implementing SMS alerts.
               </p>
               <p>
-                The biggest challenge was creating an intuitive design -- I found some of the expected behavior
-                of the initial designs confusing once I started implementing them, so I worked with our product
-                design team to iron out some of the wrinkles. After some back and forth on how best to display
-                the types of results that could be displayed and how to present potentially dozens of available
-                tags to the user, we settled on the final design collaboratively.
+                One of my tasks was implementing phone numbers associated with specific users, which required making updates to our database and the logic around looking up and sending alerts. Additionally, I needed to add more backend data checks to ensure alerts were not being duplicated, and changes to ensure both SMS and email alerts could be triggered for an individual person.
               </p>
               <p>
-                I also found the technical challenge of presenting tags interesting. In order to avoid
-                overwhelming the user, we created a separate modal with all tags available to filter on;
-                once some tags have been selected, they appear on the main search page. Moving data from
-                component to component was a fun challenge.
-              </p>
-              <p>
-                As part of this project, I created nicely styled checkboxes and 3-state checkboxes for
-                checking/unchecking an entire group of checkboxes.
+                Additionally, I implemented front-end changes associated with SMS alerts. Users can input a phone number when creating or editing an SMS alert, users are warned that updating a phone number will change the number for all alerts, and alerts cannot be saved if there is no phone number associated with the user.
               </p>
             </div>
 
-            <h4>Screenshots</h4>
+            <h4>Example</h4>
 
             <div class="portfolio-job-screencap-row">
               <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/search_filter_type_only.png" data-group="search_filter" class="search_filter">
+                <a href="./assets/images/rt-features/sms-alerts-phone.gif" data-group="sms_alerts" class="sms_alerts">
                   <img
                     class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/search_filter_type_only.png"
-                    alt="Search filter with kinds only"
+                    src="./assets/images/rt-features/sms-alerts-phone.gif"
+                    alt="Phone number updates"
                   />
                 </a>
                 <div class="portfolio-job-example-caption">
-                  Results can be filtered by type or by tag. Generally, clients only had between 5-15
-                  available types; some clients had more than a hundred tags. In order to keep the tag
-                  section from overwhelming the screen, only tags being used to filter results were shown.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/search_filter_tag_modal.png" data-group="search_filter" class="search_filter">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/search_filter_tag_modal.png"
-                    alt="Tag modal view"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Both the general filter section and the tag modal feature a 3-state checkbox. Clicking
-                  a blank checkbox selects all options. Clicking a checked checkbox or a "-" checkbox
-                  deselects all options.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/search_filter_applied.png" data-group="search_filter" class="search_filter">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/search_filter_applied.png"
-                    alt="Selected tags are displayed"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Selected tags are included in the sidebar so users can see at a glance what they have selected.
+                  SMS alerts are labeled as such in the alerts table. Clicking on an alert allows you to edit alert information,
+                  including the phone number. When a phone number is updated, the user is warned that this will update all
+                  SMS alerts for this user.
                 </div>
               </div>
             </div>
@@ -147,24 +107,18 @@
 
           <div class="portfolio-section">
             <div class="portfolio-section-header">
-              <h3>Global Search Mobile View - HTML, CSS, React</h3>
+              <h3>Automated QBR Decks</h3>
             </div>
 
             <div class="portfolio-row-job-specific">
               <p>
-                In addition to filtering on desktop, we implemented mobile-specific filtering
-                and design around the search page.
+                Customer Support created QBR decks for customers by hand, which required a lot of manual copying and pasting. In order to make their lives easier, we developed automated QBRs using Google Sheets, and implemented a front end accessible through an internal app.
               </p>
               <p>
-                Instead of a sidebar with filtering options, I implemented an action sheet. This
-                element and the button controlling it are both hidden in desktop view, and only
-                displayed on small screen sizes. I worked with design on how to display tags
-                without needing a modal.
+                The reports themselves pull data from the database, then update placeholders in a slide deck. The front end includes functionality to quickly download and prepare an email with user-entered text.
               </p>
               <p>
-                One of the biggest challenges was adjusting the the layout of search results. A
-                teammate and I used CSS Grid to lay out elements of each result, which let us
-                easily adjust how information is displayed in desktop versus mobile views.
+                I implemented key features in the slides themselves, including color bars and trend arrows showing some at-a-glance metrics, the ability to delete slide decks, and parts of the file saving logic. Additionally, I also built out the majority of the front-end component.
               </p>
             </div>
 
@@ -172,43 +126,41 @@
 
             <div class="portfolio-job-screencap-row">
               <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/mobile_view_desktop.png" data-group="mobile_global_view" class="mobile_global_view">
+                <a href="./assets/images/rt-features/QBR-admin-page.png" data-group="qbr_page" class="qbr_page">
                   <img
                     class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/mobile_view_desktop.png"
-                    alt="Note views on the timeline"
+                    src="./assets/images/rt-features/QBR-admin-page.png"
+                    alt="QBR Internal App"
                   />
                 </a>
                 <div class="portfolio-job-example-caption">
-                  On the desktop view, the filter section is to the right of the search results.
-                  Tags (the colored lozenges on each result) are displayed on the right side of each result.
+                  The front-end component of the QBRs. When using the quicksend option for a generated report, the text in the "quick-send" area is copied into the body of the email. Customer Success can make QBRs themselves from here.
                 </div>
               </div>
 
               <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/mobile_view_mobile.png" data-group="mobile_global_view" class="mobile_global_view">
+                <a href="./assets/images/rt-features/QBR-data.png" data-group="mobile_global_view" class="mobile_global_view">
                   <img
                     class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/mobile_view_mobile.png"
-                    alt="Note view with comments"
+                    src="./assets/images/rt-features/QBR-data.png"
+                    alt="Sample data from the QBR deck"
                   />
                 </a>
                 <div class="portfolio-job-example-caption">
-                  Mobile results have a different structure. Some design elements are adjusted using CSS Grid,
-                  while others are only displayed on mobile or on desktop.
+                  A sample slide from an automatically generated QBR deck.
                 </div>
               </div>
 
               <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/mobile_view_filter.png" data-group="mobile_global_view" class="mobile_global_view">
+                <a href="./assets/images/rt-features/QBR-sources-example.png" data-group="mobile_global_view" class="mobile_global_view">
                   <img
                     class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/mobile_view_filter.png"
-                    alt="Note view without comments"
+                    src="./assets/images/rt-features/QBR-sources-example.png"
+                    alt="Example sources data"
                   />
                 </a>
                 <div class="portfolio-job-example-caption">
-                  Mobile filtering is a drawer, accessed via the funnel button.
+                  A sample slide from an automatically generated QBR deck.
                 </div>
               </div>
             </div>
@@ -216,212 +168,31 @@
 
           <div class="portfolio-section">
             <div class="portfolio-section-header">
-              <h3>Modal Style Unification - HTML, CSS, React</h3>
+              <h3>Autogenerated Responses</h3>
             </div>
 
             <div class="portfolio-row-job-specific">
               <p>
-                Before I started on this project, modal implementation was somewhat scattershot -- some modals
-                had headers and some didn't, some modals had buttons at the top and some had buttons at the
-                bottom, and so on. After I implemented the new tag modal design, I went through the app to
-                update all modals to a single unified style.
+                We created an autogenerated response feature for users who may not be sure how to begin responding to reviews. On the page showing review details, we added a button that provides a suggested response, designed to match the review sentiment.
               </p>
               <p>
-                The biggest challenge here was actually around pulling out existing styles -- our modal
-                had originally been a <a href="https://react.foundation/">Foundation</a> modal with some
-                built-in styling. Several of the modals in the app had a lot of brittle styling designed
-                to override the existing modal styles. I removed as much styling as I could from the base
-                modal, adding component-specific CSS as needed.
-              </p>
-              <p>
-                I also created a new ModalHeader component that put buttons and other functionality into
-                the modal header. This gave us a consistent style and functionality for all our modals,
-                allowing easier maintenance and unified user experience.
+                I was tasked with some of the front end work, as well as incorporating autogenerated reviews into immediate alert emails. This required some edits to the API in order to only provide responses appropriate for emails.
               </p>
             </div>
 
-            <h4>Screenshots</h4>
+            <h4>Example</h4>
 
             <div class="portfolio-job-screencap-row">
               <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/modal_unity_old_modals.png" data-group="modal_unity" class="modal_unity">
+                <a href="./assets/images/rt-features/ghostwriter-example.gif" data-group="ghostwriter_response" class="ghostwriter_response">
                   <img
                     class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/modal_unity_old_modals.png"
-                    alt="Old modals"
+                    src="./assets/images/rt-features/ghostwriter-example.gif"
+                    alt="Front-end ghostwriter"
                   />
                 </a>
                 <div class="portfolio-job-example-caption">
-                  Old modals had a variety of styles and functionalities.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/modal_unity_new_modals.png" data-group="modal_unity" class="modal_unity">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/modal_unity_new_modals.png"
-                    alt="New modals"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Updated modal styles always include buttons in the header and more elegant formatting.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/modal_unity_example.png" data-group="modal_unity" class="modal_unity">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/modal_unity_example.png"
-                    alt="Example modal"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  The new modal styling matches the overall look and feel of the app.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-section">
-            <div class="portfolio-section-header">
-              <h3>Entity Mapping Modal - Ruby on Rails, HTML, CSS, React</h3>
-            </div>
-
-            <div class="portfolio-row-job-specific">
-              <p>
-                The application features integrations with 3rd party data; one of the main integrations
-                is with Solovis, an institutional investment management program. Prior to the addition
-                of this feature, mapping entities to Solovis had to be done by a member of the team and
-                could not be done independently by users of the app.
-              </p>
-              <p>
-                A teammate and I worked together to create the necessary internal API endpoints, update
-                an API client used to communicate with the Solovis API, and implement a mapping modal on
-                the front end. Major challenges included figuring out what information was and was not
-                available in the Solovis API, working out some implementation details around around the
-                user interface, and handling hand-offs of the project between two different people.
-              </p>
-              <p>
-                One of the meatier technical challenges was around creating a text input that filtered a
-                dropdown list of existing entities in Solovis that were available for mapping. I had to
-                get clever with using tabindex along with mouse down events to group the dropdown with
-                the text box, allowing them to be treated as a single distinct component with unified
-                focus and blur behavior instead of two completely separate elements.
-              </p>
-            </div>
-
-            <h4>Screenshots</h4>
-
-            <div class="portfolio-job-screencap-row">
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/entity_mapping_blank.png" data-group="entity_mapping" class="entity_mapping">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/entity_mapping_blank.png"
-                    alt="Blank entity mapping modal"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Once a mapping has been selected, the disabled text boxes are filled automatically
-                  with the relevant information.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/entity_mapping_search.png" data-group="entity_mapping" class="entity_mapping">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/entity_mapping_search.png"
-                    alt="Filter list example"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Clicking on the search field brings up a full list of all available entities.
-                  Typing filters the list.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/entity_mapping_exists.png" data-group="entity_mapping" class="entity_mapping">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/entity_mapping_exists.png"
-                    alt="Mapped entity display"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Once an entity has been mapped, that relationship is displayed in the modal.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-section">
-            <div class="portfolio-section-header">
-              <h3>Standalone Note View - HTML, CSS, React</h3>
-            </div>
-
-            <div class="portfolio-row-job-specific">
-              <p>
-                Clients requested a print-specific view of notes. Prior to this feature, users
-                needed to either screencap notes in the application, which would be inconvenient
-                for longer notes and would include visually distracting design elements; or copy
-                and paste information from the application to a printable document, which would
-                not be formatted correctly and could potentially not have all the information
-                the user needed.
-              </p>
-              <p>
-                I created a separate section of the application solely for print views, removing
-                unnecessary features of the main app. I only implemented design elements and
-                information necessary to display the note, while also still including useful
-                features, like the ability to follow links to other parts of the app.
-              </p>
-              <p>
-                I also added functionality to hide the comments associated with a note as needed.
-              </p>
-            </div>
-
-            <h4>Screenshots</h4>
-
-            <div class="portfolio-job-screencap-row">
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/standalone_note_view_timeline.png" data-group="note_view" class="note_view">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/standalone_note_view_timeline.png"
-                    alt="Note views on the timeline"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Note views on the main timeline include headers and sidebars and do not print nicely.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/standalone_note_view_comments.png" data-group="note_view" class="note_view">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/standalone_note_view_comments.png"
-                    alt="Note view with comments"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Clicking the pop-out icon takes you to a print view.
-                </div>
-              </div>
-
-              <div class="portfolio-job-example-card">
-                <a href="./assets/images/itgny-features/standalone_note_view_hidden_comments.png" data-group="note_view" class="note_view">
-                  <img
-                    class="portfolio-job-thumb"
-                    src="./assets/images/itgny-features/standalone_note_view_hidden_comments.png"
-                    alt="Note view without comments"
-                  />
-                </a>
-                <div class="portfolio-job-example-caption">
-                  Comments on the print view can be hidden or shown, depending on what the user needs.
+                  Clicking on the "Ghostwriter" button cycles through responses. Possible responses are different depending on the review being positive, negative, or neutral.
                 </div>
               </div>
             </div>
