@@ -28,6 +28,10 @@ main {
   max-width: 800px;
 }
 
+.text-aside {
+  font-size: 15px;
+}
+
 .profile-img-wrapper {
   flex: 2;
   text-align: right;
